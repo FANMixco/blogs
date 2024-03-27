@@ -16,6 +16,8 @@ a {
 }
 #logo {
     padding-bottom: 2rem;
+    height: 125px;
+    width: 125px;
 }
 .container {
     display: flex;
