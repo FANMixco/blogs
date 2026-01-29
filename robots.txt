@@ -1,0 +1,3 @@
+User-Agent: *
+Allow: /
+Sitemap: https://blogs.federiconavarrete.com/sitemap.xml
