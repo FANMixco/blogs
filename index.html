@@ -76,17 +76,36 @@ https://goo.gl/forms/JArck4uzbGGmTuG72
       </a>
     </div>
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org/",
-        "@type": "WebSite",
-        "name": "Federico Navarrete's Blogs",
-        "url": "https://blogs.federiconavarrete.com",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "{search_term_string}",
-          "query-input": "required name=search_term_string"
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "CollectionPage",
+          "@id": "https://blogs.federiconavarrete.com/#collection",
+          "url": "https://blogs.federiconavarrete.com",
+          "name": "Federico Navarrete’s Blogs",
+          "description": "An index of professional and creative blogs by Federico Navarrete, covering folklore, technology, and business.",
+          "mainEntity": {
+            "@type": "ItemList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Federico Stories", "url": "https://federicostories.blogspot.com/" },
+              { "@type": "ListItem", "position": 2, "name": "Federico Thoughts", "url": "https://federicothoughts.blogspot.com/" },
+              { "@type": "ListItem", "position": 3, "name": "Supernova IC", "url": "https://supernovaic.blogspot.com/" },
+              { "@type": "ListItem", "position": 4, "name": "Federico Stories Extras", "url": "https://federicostoriesextras.blogspot.com/" }
+            ]
+          }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://blogs.federiconavarrete.com/#author",
+          "name": "Federico Navarrete",
+          "sameAs": [
+            "https://linktree.federiconavarrete.com",
+            "https://en.wikipedia.org/wiki/Federico_Navarrete"
+          ]
         }
-      }
+      ]
+    }
     </script>
   </body>
 </html>
