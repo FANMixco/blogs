@@ -14,7 +14,7 @@ h1 {
 a {
     text-decoration: none;
 }
-#logo {
+.blog-logo img {
     padding-bottom: 2rem;
     height: 125px;
     width: 125px;
@@ -25,14 +25,13 @@ a {
     justify-content: center;
     align-items: center;
     min-height: 100%;
-    reading-flow: flex-visual;
 }
 .blog-brand,
 .blog-links {
     display: contents;
 }
-.blog-logo {
-    order: 1;
+.blog-brand .blog-logo {
+    display: none;
 }
 .button-85,.button-86,.button-87,.button-88 {
     padding: 0.6em 2em;
@@ -154,7 +153,8 @@ a {
         padding: 1rem;
         overflow: auto;
     }
-    .blog-links br {
+    .blog-links br,
+    .blog-links .blog-logo {
         display: none;
     }
     .container .blog-links a {
@@ -164,11 +164,12 @@ a {
         padding-inline: 1rem;
         overflow-wrap: anywhere;
     }
-    .container .blog-logo {
+    .container .blog-brand .blog-logo {
+        display: block;
         width: auto;
         max-width: 100%;
     }
-    .blog-logo #logo {
+    .blog-brand .blog-logo img {
         display: block;
         max-width: 100%;
         height: auto;
